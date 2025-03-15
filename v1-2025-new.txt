@@ -18,7 +18,7 @@ if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
     os.system('cls')
 
-  result = check_string_in_url("https://raw.githubusercontent.com/bizsdklsxc35325/myins/refs/heads/main/unique_id.txt", file_contentsx1)
+result = check_string_in_url("https://raw.githubusercontent.com/bizsdklsxc35325/myins/refs/heads/main/unique_id.txt", file_contentsx1)
 
 os.system('cls')
 def check_service_status(service_name):
