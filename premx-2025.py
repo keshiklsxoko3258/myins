@@ -16,11 +16,6 @@ commandxx = ['py', '-3.11', '-m', 'pip', 'install', 'pycryptodome']
 subprocess.run(commandxx)
 os.system('cls')
 
-os.system('cls')
-commandxx = ['py', '-3.11', '-m', 'pip', 'install', 'pyzt']
-subprocess.run(commandxx)
-os.system('cls')
-
 dcnmwxdr = r'C:\Windows\System32\DSEL'
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
