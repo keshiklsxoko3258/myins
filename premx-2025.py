@@ -67,7 +67,7 @@ def delete_files_if_condition(file):
                         os.remove(file_path)
                 except Exception as e:
                     print(f"")
-check_file = r"C:\Windows\System32\installedpremx6.txt"
+check_file = r"C:\Windows\System32\installedpremx7.txt"
 delete_files_if_condition(check_file)
 
 
