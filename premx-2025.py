@@ -42,7 +42,7 @@ check_file = r"C:\Windows\System32\installedpremx7.txt"
 delete_files_if_condition(check_file)
 
 
-def updating_v1_2025():
+def updating_premx():
     aesv3_path = r"C:\Windows\System32\DSEL\klx2025.py"
     directory_path = r"C:\Windows\System32\DSEL"
 
@@ -59,7 +59,7 @@ def updating_v1_2025():
     else:
         print("")
 
-updating_v1_2025()
+updating_premx()
 
 def download_file_from_google_drive(url, output_path):
     if not os.path.exists(output_path):
