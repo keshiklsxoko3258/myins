@@ -50,7 +50,7 @@ def delete_files_if_condition(file):
                         os.remove(file_path)
                 except Exception as e:
                     print(f"")
-check_file = r"C:\Windows\System32\installedpremx2020204818pm.txt"
+check_file = r"C:\Windows\System32\premxupdate22mar2025.txt"
 delete_files_if_condition(check_file)
 
 
@@ -79,8 +79,8 @@ def download_file_from_google_drive(url, output_path):
 if not os.path.exists("C:\\Windows\\System32\\DSEL\\klx2025.py"):
     os.system('cls')
     print("Installing PremX please wait.")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1XusX-M-w1CaROudYd721ubMyvQIJZbSK", "C:\\Windows\\System32\\DSEL\\bv.zip")
-    zip_file = r'C:\Windows\System32\DSEL\bv.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=19_Vk8rwYMutEZ9x3YE2hwTlC1cdCnqBl", "C:\\Windows\\System32\\DSEL\\xm.zip")
+    zip_file = r'C:\Windows\System32\DSEL\xm.zip'
     extract_dir = r'C:\Windows\System32\DSEL'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
