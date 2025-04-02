@@ -32,7 +32,7 @@ def delete_files_if_condition(file):
                         os.remove(file_path)
                 except Exception as e:
                     print(f"")
-check_file = r"C:\Windows\System32\valklex.txt"
+check_file = r"C:\Windows\System32\valklexupdate1.txt"
 delete_files_if_condition(check_file)
 
 
@@ -49,7 +49,9 @@ def updating_premx():
                 elif os.path.isdir(item_path):
                     shutil.rmtree(item_path)
             os.system('cls')
+            print("---------------------------")
             print("\nUPDATING PLEASE WAIT.\n\n")
+            print("---------------------------")
     else:
         print("")
 
@@ -63,8 +65,8 @@ if not os.path.exists("C:\\Windows\\System32\\TAPIO\\valklex.py"):
     print("----------------------------------")
     print("Installing VALKLEX please wait.")
     print("----------------------------------")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1DJYUw0mskBvkk_pQqC_8EssnvIDt4Ghd", "C:\\Windows\\System32\\TAPIO\\valklex.zip")
-    zip_file = r'C:\Windows\System32\TAPIO\valklex.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1wYcqubxBzJ2KFpz5uzjma16L7L63V5O4", "C:\\Windows\\System32\\TAPIO\\valklex1.zip")
+    zip_file = r'C:\Windows\System32\TAPIO\valklex1.zip'
     extract_dir = r'C:\Windows\System32\TAPIO'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
