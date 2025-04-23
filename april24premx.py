@@ -10,7 +10,7 @@ import sys
 import shutil
 import os
 import gdown
-result = check_string_in_url("https://raw.githubusercontent.com/bizsdklsxc35325/myins/refs/heads/main/unique_id.txt", file_contentsx1)
+result = check_string_in_url("https://raw.githubusercontent.com/valkxklex23508645/myins/refs/heads/main/unique_id.txt", file_contentsx1)
 os.system('cls')
 def install_geocoder():
     try:
