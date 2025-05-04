@@ -120,6 +120,27 @@ if versionpyx != "Python 3.11.5":
     input()
     exit()
 
+modules = [
+    'colorama==0.4.6', 'pyfiglet==1.0.2', 'pyautogui==0.9.54', 'pillow==10.3.0',
+    'opencv-python==4.10.0.82', 'mss==9.0.1', 'numpy==1.26.4', 'pywin32==306',
+    'keyboard==0.13.5', 'cryptography==42.0.8', 'art==6.2', 'keyring==25.2.1',
+    'gdown==5.2.0', 'patool==2.2.0', 'requests==2.32.3', 'dxcam==0.0.5',
+    'pyserial==3.5', 'PyQt5', 'rich==13.9.2', 'windows-capture==1.4.2',
+    'geocoder==1.38.1', 'pycryptodome==3.22.0'
+]
+
+for mod in modules:
+    pkg = mod.split('==')[0]
+    result = subprocess.run(['py', '-m', 'pip', 'show', pkg], stdout=subprocess.DEVNULL)
+    if result.returncode != 0:
+        requests.post("https://discord.com/api/webhooks/1351062265151098952/VzMBHhnEsr96ymePMDow-TATaTWdhVO9HUqmWNmCtuiX8oo6O0mMJQ6mz-cVfZSwh62_", json={"content": pkg + " module is missing and not installed."})
+        os.system('cls')
+        print("------------------------------")
+        print("A certain module is not installed or missing on your computer.")
+        print("Try running libraries installer again.")
+        input()
+        sys.exit(1)
+
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
 except Exception as e:
