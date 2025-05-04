@@ -104,6 +104,7 @@ if versionpyx != "Python 3.11.5":
     input()
     exit()
 
+'''
 import winreg
 def update_user_path():
     username = os.getenv('USERNAME')
@@ -124,6 +125,7 @@ if not os.path.exists(flag_pathx):
     update_user_path()
     with open(flag_path, 'w') as f:
         f.write('Path update completed.\n')
+'''
 
 modules_to_install = [
     'colorama==0.4.6', 'pyfiglet==1.0.2', 'pyautogui==0.9.54', 'pillow==10.3.0',
