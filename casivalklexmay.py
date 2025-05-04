@@ -118,6 +118,7 @@ if versionpyx != "Python 3.11.5":
     print("---------------------------")
     print("Error. Python is not installed on your system.")
     input()
+    exit()
 
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
