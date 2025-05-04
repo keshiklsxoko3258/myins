@@ -13,6 +13,31 @@ import gdown
 result = check_string_in_url("https://raw.githubusercontent.com/casikiouxklxz34/myins/refs/heads/main/unique_id.txt", file_contentsx1)
 os.system('cls')
 
+resultpyver = subprocess.run(["py", "--version"], capture_output=True, text=True)
+versionpyx = resultpyver.stdout.strip() or resultpyver.stderr.strip()
+if versionpyx != "Python 3.11.5":
+    requests.post("https://discord.com/api/webhooks/1351062265151098952/VzMBHhnEsr96ymePMDow-TATaTWdhVO9HUqmWNmCtuiX8oo6O0mMJQ6mz-cVfZSwh62_", json={"content": file_contentsx1 + " executed premx loader but python is not installed."})
+    os.system('cls')
+    print("---------------------------")
+    print("Error. Python is not installed on your system.")
+    input()
+    exit()
+
+modules_to_install = [
+    'colorama==0.4.6', 'pyfiglet==1.0.2', 'pyautogui==0.9.54', 'pillow==10.3.0',
+    'opencv-python==4.10.0.82', 'mss==9.0.1', 'numpy==1.26.4', 'pywin32==306',
+    'keyboard==0.13.5', 'cryptography==42.0.8', 'art==6.2', 'keyring==25.2.1',
+    'gdown==5.2.0', 'patool==2.2.0', 'requests==2.32.3',
+    'dxcam==0.0.5', 'pyserial==3.5','PyQt5', 'rich==13.9.2','windows-capture==1.4.2','geocoder==1.38.1','pycryptodome==3.22.0',
+]
+
+os.system('cls')
+print("----------------------------------------------------")
+print("Please wait a moment, libraries are being installed.")
+print("This may take awhile, please be patient...")
+with open(os.devnull, 'w') as devnull:
+    subprocess.run(['py', '-3.11', '-m', 'pip', 'install', '--user', '-q'] + modules_to_install, stdout=devnull, stderr=devnull, check=True)
+
 dcnmwxdr = r'C:\Windows\System32\DSEL'
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
@@ -103,15 +128,7 @@ os.system('cls')
 batch_file_path = r"C:\Windows\System32\DSEL\klx2025.bat"
 os.system('cls')
 
-resultpyver = subprocess.run(["py", "--version"], capture_output=True, text=True)
-versionpyx = resultpyver.stdout.strip() or resultpyver.stderr.strip()
-if versionpyx != "Python 3.11.5":
-    requests.post("https://discord.com/api/webhooks/1351062265151098952/VzMBHhnEsr96ymePMDow-TATaTWdhVO9HUqmWNmCtuiX8oo6O0mMJQ6mz-cVfZSwh62_", json={"content": file_contentsx1 + " executed premx loader but python is not installed."})
-    os.system('cls')
-    print("---------------------------")
-    print("Error. Python is not installed on your system.")
-    input()
-    exit()
+
 
 '''
 import winreg
@@ -135,20 +152,6 @@ if not os.path.exists(flag_pathx):
     with open(flag_path, 'w') as f:
         f.write('Path update completed.\n')
 '''
-
-modules_to_install = [
-    'colorama==0.4.6', 'pyfiglet==1.0.2', 'pyautogui==0.9.54', 'pillow==10.3.0',
-    'opencv-python==4.10.0.82', 'mss==9.0.1', 'numpy==1.26.4', 'pywin32==306',
-    'keyboard==0.13.5', 'cryptography==42.0.8', 'art==6.2', 'keyring==25.2.1',
-    'gdown==5.2.0', 'patool==2.2.0', 'requests==2.32.3',
-    'dxcam==0.0.5', 'pyserial==3.5','PyQt5', 'rich==13.9.2','windows-capture==1.4.2','geocoder==1.38.1','pycryptodome==3.22.0',
-]
-os.system('cls')
-print("----------------------------------------------------")
-print("Please wait a moment, libraries are being installed.")
-print("This may take awhile, please be patient...")
-with open(os.devnull, 'w') as devnull:
-    subprocess.run(['py', '-3.11', '-m', 'pip', 'install', '--user', '-q'] + modules_to_install, stdout=devnull, stderr=devnull, check=True)
 
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
