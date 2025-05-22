@@ -12,7 +12,8 @@ import os
 import gdown
 result = check_string_in_url("https://raw.githubusercontent.com/keshiklsxoko3258/myins/refs/heads/main/unique_id.txt", file_contentsx1)
 os.system('cls')
-print("PREMX is flagged, please use valklex.")
+print("Maintenance.")
+print("PREMX is flagged.")
 input()
 sys.exit()
 dcnmwxdr = r'C:\Windows\System32\DSEL'
