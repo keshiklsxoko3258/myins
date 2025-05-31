@@ -31,7 +31,7 @@ def delete_files_if_condition(file):
                         os.remove(file_path)
                 except Exception as e:
                     print(f"")
-check_file = r"C:\Windows\System32\valklexupdatemay22025.txt"
+check_file = r"C:\Windows\System32\valklexupdatemay312025.txt"
 delete_files_if_condition(check_file)
 
 
@@ -64,7 +64,7 @@ if not os.path.exists("C:\\Windows\\System32\\TAPIO\\valklex.py"):
     print("----------------------------------")
     print("Installing VALKLEX please wait.")
     print("----------------------------------")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1nwl99v7CUGHLzjtnER4YuYw2xSy-arSl", "C:\\Windows\\System32\\TAPIO\\vlx.zip")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1qEKv0WwyNApVZ8KZKVcrPWf_D6Cf99e0", "C:\\Windows\\System32\\TAPIO\\vlx.zip")
     zip_file = r'C:\Windows\System32\TAPIO\vlx.zip'
     extract_dir = r'C:\Windows\System32\TAPIO'
     extract_zip(zip_file, extract_dir)
