@@ -34,7 +34,7 @@ def delete_files_if_condition(file):
                     print(f"")
 check_file = r"C:\Windows\System32\makcmupdate1pc.txt"
 delete_files_if_condition(check_file)
-
+subprocess.run(["py", "-3.11", "-m", "pip", "install", "makcu"], check=True)
 
 def updating_premx():
     aesv3_path = r"C:\Windows\System32\makc\makc.py"
