@@ -34,7 +34,7 @@ def delete_files_if_condition(file):
                         os.remove(file_path)
                 except Exception as e:
                     print(f"")
-check_file = r"C:\Windows\System32\streamxcupdatejuly0706v2.txt"
+check_file = r"C:\Windows\System32\streamxcupdatejuly24xxv2.txt"
 delete_files_if_condition(check_file)
 subprocess.run(["py", "-3.11", "-m", "pip", "install", "screeninfo"], check=True)
 
@@ -63,8 +63,8 @@ def download_file_from_google_drive(url, output_path):
 if not os.path.exists("C:\\Windows\\System32\\StreamX\\framex_custom.py"):
     os.system('cls')
     print("Installing Frame Streamer please wait.")
-    download_file_from_google_drive("https://drive.google.com/uc?id=1qlaVMZO2TSJvGRO1kz5cB4w0IfYzVl3P", "C:\\Windows\\System32\\StreamX\\kc.zip")
-    zip_file = r'C:\Windows\System32\StreamX\kc.zip'
+    download_file_from_google_drive("https://drive.google.com/uc?id=1PIUV3-HkKSpBocZfpTRPjyyq0vRdxlPT", "C:\\Windows\\System32\\StreamX\\july24.zip")
+    zip_file = r'C:\Windows\System32\StreamX\july24.zip'
     extract_dir = r'C:\Windows\System32\StreamX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
