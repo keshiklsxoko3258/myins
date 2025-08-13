@@ -10,8 +10,6 @@ import sys
 import shutil
 import os
 import gdown
-
-#result = check_string_in_url("https://raw.githubusercontent.com/keshiklsxoko3258/myins/refs/heads/main/unique_id.txt", file_contentsx1)
 os.system('cls')
 
 
